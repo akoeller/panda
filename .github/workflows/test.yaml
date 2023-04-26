@@ -104,12 +104,12 @@ jobs:
         run: ${{ env.PERSIST }} "cd tests/misra && ./test_misra.sh"
       - name: Copy analysis outputs
         run: docker cp panda:/tmp/misra /tmp
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cppcheck_output
           path: /tmp/misra/cppcheck_*_output.txt
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: misra_output
