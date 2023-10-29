@@ -1,4 +1,4 @@
-libusb1==2.0.1
+libusb1==3.1.0
 numpy
 hexdump>=3.3
 pycryptodome==3.9.8
