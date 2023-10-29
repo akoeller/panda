@@ -46,7 +46,7 @@ setup(
   platforms='any',
   license='MIT',
   install_requires=[
-    'libusb1 == 2.0.1',
+    'libusb1 ==3.1.0',
     'hexdump >= 3.3',
     'pycryptodome >= 3.9.8',
     'tqdm >= 4.14.0',
